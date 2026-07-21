@@ -19,12 +19,12 @@ def contact():
     
     save_contact(data)
     try:
-      send_admin_email(data)
-      print("Email sent successfully.")
+     send_admin_email(data)
+     print("✅ Email sent successfully.")
     except Exception as e:
-     print(f"Email Error: {e}")
+     print(f"❌ Email Error: {e}")
 
-    print("Saved to MySQL and email sent.")
+    print("✅ Saved to MySQL.")
 
     return jsonify({
         "success": True,
