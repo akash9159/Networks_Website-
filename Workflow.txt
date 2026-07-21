@@ -1,0 +1,20 @@
+NW website/
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── Networks Logo.jpeg
+│
+├── backend/
+│   ├── app.py
+│   ├── config.py
+│   ├── database.py
+│   ├── routes.py
+│   ├── email_service.py
+│   ├── requirements.txt
+│   ├── .env
+│   └── .gitignore
+│
+└── database/
+    └── schema.sql
