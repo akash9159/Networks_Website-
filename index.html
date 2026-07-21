@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NETWORKS – Enterprise IT & Networking Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <img src="Networks_Logo.jpeg" alt="NETWORKS">
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#partners">Partners</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#why">Why Us</a>
+    <a href="#partners">Partners</a>
+    <a href="#programs">Programs</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <canvas id="meshCanvas"></canvas>
+
+    <!-- Subtle grid overlay -->
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-inner">
+      <div class="hero-content">
+
+        <div class="hero-tag">
+          <span class="tag-dot"></span>
+          ISO Certified &nbsp;·&nbsp; MSME Certified &nbsp;·&nbsp; ISODA Member
+        </div>
+
+        <h1>
+          Enterprise Networking<br>
+          <span class="gradient-text">Built to Perform.</span>
+        </h1>
+
+        <p class="hero-sub">
+          NETWORKS delivers secure, scalable IT infrastructure solutions —
+          from structured cabling and enterprise networking to firewall security
+          and wireless deployments. Trusted by businesses for over 17 years.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#services" class="btn-primary">
+            Explore Services
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn-ghost">Request Consultation</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong>17+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <strong>25+</strong>
+            <span>Certified Engineers</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <strong>500+</strong>
+            <span>Projects Delivered</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="hero-stat">
+            <strong>24×7</strong>
+            <span>Technical Support</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Hero right side — floating info card -->
+      <div class="hero-card">
+        <div class="hcard-header">
+          <div class="hcard-dot green"></div>
+          <div class="hcard-dot yellow"></div>
+          <div class="hcard-dot red"></div>
+          <span>Network Status</span>
+        </div>
+        <div class="hcard-body">
+          <div class="hcard-row">
+            <span class="hcard-icon">📡</span>
+            <div>
+              <p class="hcard-label">Wireless Coverage</p>
+              <!--<p class="hcard-val">Enterprise Wi-Fi 6/6E/7</p>-->
+            </div>
+            <span class="hcard-badge active">Active</span>
+          </div>
+          <div class="hcard-row">
+            <span class="hcard-icon">🛡️</span>
+            <div>
+              <p class="hcard-label">Firewall Security</p>
+              <p class="hcard-val">Next-Gen Fortinet / SonicWall</p>
+            </div>
+            <span class="hcard-badge active">Active</span>
+          </div>
+          <div class="hcard-row">
+            <span class="hcard-icon">🖥️</span>
+            <div>
+              <p class="hcard-label">Data Center</p>
+              <p class="hcard-val">HPE / Dell Server Infrastructure</p>
+            </div>
+            <span class="hcard-badge active">Active</span>
+          </div>
+          <div class="hcard-row">
+            <span class="hcard-icon">🔗</span>
+            <div>
+              <p class="hcard-label">Structured Cabling</p>
+              <p class="hcard-val"> CommScope / Molex </p>
+            </div>
+            <span class="hcard-badge active">Active</span>
+          </div>
+          <div class="hcard-footer">
+            <span class="hcard-live">● LIVE</span>
+            All systems operational · Chennai HQ
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section bg-white">
+    <div class="container">
+      <div class="split-grid">
+        <div class="split-left reveal">
+          <span class="eyebrow">Who We Are</span>
+          <h2 class="sec-title">Chennai's Trusted IT Infrastructure Partner</h2>
+          <p class="sec-body">With over 17+ years of industry experience, NETWORKS has earned a strong reputation as a trusted provider of networking and IT infrastructure solutions. We specialize in structured cabling, enterprise networking, firewall security, CCTV surveillance, wireless networking, server infrastructure, and annual maintenance services.</p>
+          <p class="sec-body" style="margin-top:14px;">Beyond infrastructure, we also provide network lab setup services for educational institutions and a Technical Internship Program for engineering students — giving them real-world, hands-on industry exposure.</p>
+          <div class="about-tags">
+            <span>ISO Certified</span>
+            <span>Registered MSME</span>
+            <span>ISODA Member</span>
+            <span>PAN India Support</span>
+          </div>
+        </div>
+        <div class="split-right reveal">
+          <div class="about-metric-grid">
+            <div class="metric-box blue">
+              <strong>17+</strong>
+              <p>Years of Industry Experience</p>
+            </div>
+            <div class="metric-box light">
+              <strong>25+</strong>
+              <p>Certified & Trained Engineers</p>
+            </div>
+            <div class="metric-box light">
+              <strong>500+</strong>
+              <p>Successful Projects Delivered</p>
+            </div>
+            <div class="metric-box navy">
+              <strong>24×7</strong>
+              <p>Round-the-Clock Technical Support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="section bg-offwhite">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="eyebrow">What We Do</span>
+        <h2 class="sec-title">Our Core Services</h2>
+        <p class="sec-desc">End-to-end IT infrastructure solutions designed for enterprise reliability, security, and scale.</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="svc-card reveal">
+          <div class="svc-top">
+            <div class="svc-num">01</div>
+            <div class="svc-ico">📡</div>
+          </div>
+          <h3>Network Infrastructure & Wireless</h3>
+          <p>Wi-Fi planning, RF surveys, enterprise wireless deployment, campus-wide connectivity, secure authentication, and network optimization.</p>
+          <div class="svc-line"></div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top">
+            <div class="svc-num">02</div>
+            <div class="svc-ico">🔒</div>
+          </div>
+          <h3>Security & Access Control</h3>
+          <p>Next-generation firewalls, VPNs, IDS/IPS, CCTV surveillance, biometric access control, and visitor management systems.</p>
+          <div class="svc-line"></div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top">
+            <div class="svc-num">03</div>
+            <div class="svc-ico">🖧</div>
+          </div>
+          <h3>Enterprise Networking</h3>
+          <p>LAN/WAN design, routing & switching, VLAN, SD-WAN, MPLS, QoS, network monitoring, audits, and performance optimization.</p>
+          <div class="svc-line"></div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top">
+            <div class="svc-num">04</div>
+            <div class="svc-ico">🖥️</div>
+          </div>
+          <h3>Data Center & Server Solutions</h3>
+          <p>Scalable data center infrastructure with server deployment, SAN storage, virtualization, and backup & disaster recovery services.</p>
+          <div class="svc-line"></div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top">
+            <div class="svc-num">05</div>
+            <div class="svc-ico">🎥</div>
+          </div>
+          <h3>Audio Visual & Collaboration</h3>
+          <p>AV system design, video conferencing, boardroom solutions, meeting room integration, and smart classroom technologies.</p>
+          <div class="svc-line"></div>
+        </div>
+
+        <div class="svc-card reveal">
+          <div class="svc-top">
+            <div class="svc-num">06</div>
+            <div class="svc-ico">⚙️</div>
+          </div>
+          <h3>Project & Managed Services</h3>
+          <p>Complete project lifecycle — solution design, deployment, migration, AMC, FMS, network operations, and 24×7 technical assistance.</p>
+          <div class="svc-line"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERTISE ========== -->
+  <section id="expertise" class="section bg-navy">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="eyebrow light">Technical Depth</span>
+        <h2 class="sec-title light">Core Expertise</h2>
+        <p class="sec-desc light">Deep specialization across every layer of the IT infrastructure stack.</p>
+      </div>
+      <div class="expertise-grid">
+
+        <div class="exp-card reveal">
+          <div class="exp-ico">🏗️</div>
+          <h3>Enterprise Networking</h3>
+          <p>LAN/WAN architecture, structured cabling, optical fiber backbone, high availability and redundant network solutions.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-ico">📶</div>
+          <h3>Wireless Technologies</h3>
+          <p>Wi-Fi 5/6/6E/7, enterprise wireless platforms, cloud-managed networks, controller deployment and RF optimization.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-ico">🛡️</div>
+          <h3>Network Security</h3>
+          <p>Next-gen firewalls, VPN, NAC, firewall policy management, network segmentation and advanced threat prevention.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-ico">💾</div>
+          <h3>Data Center</h3>
+          <p>Virtualization, SAN/NAS storage, data center networking, high availability and disaster recovery solutions.</p>
+        </div>
+
+        <div class="exp-card reveal">
+          <div class="exp-ico">🔧</div>
+          <h3>Network Operations</h3>
+          <p>Installation, commissioning, migration, preventive maintenance, performance monitoring and technical documentation.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section id="why" class="section bg-white">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="eyebrow">Why Choose NETWORKS</span>
+        <h2 class="sec-title">Built on Trust.<br>Driven by Expertise.</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card reveal">
+          <span class="why-ico">🏅</span>
+          <h4>17+ Years Experience</h4>
+          <p>Decades of proven delivery across enterprise IT infrastructure projects.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-ico">👨‍💻</span>
+          <h4>Certified Engineers</h4>
+          <p>25+ well-trained professionals with vendor certifications across all domains.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-ico">🔗</span>
+          <h4>End-to-End Solutions</h4>
+          <p>From design and deployment to AMC and 24×7 support — we handle it all.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-ico">🌐</span>
+          <h4>Multi-Vendor Expertise</h4>
+          <p>Proficient across HPE, Fortinet, Juniper, Dell, Cisco, Aruba and more.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-ico">🔐</span>
+          <h4>Enterprise Security</h4>
+          <p>Next-gen firewall, VPN, NAC and threat prevention as standard practice.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-ico">🇮🇳</span>
+          <h4>PAN India Support</h4>
+          <p>On-site deployment and technical support available across all of India.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-ico">📋</span>
+          <h4>Proven Track Record</h4>
+          <p>500+ successful projects across education, enterprise, manufacturing and hospitality.</p>
+        </div>
+        <div class="why-card reveal">
+          <span class="why-ico">🕐</span>
+          <h4>24×7 Technical Support</h4>
+          <p>Round-the-clock assistance with remote monitoring and on-site response.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PARTNERS ========== -->
+  <section id="partners" class="section bg-offwhite">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="eyebrow">Technology Ecosystem</span>
+        <h2 class="sec-title">Partners & Alliances</h2>
+        <p class="sec-desc">We work with globally recognized technology brands to deliver dependable, enterprise-grade IT solutions.</p>
+      </div>
+
+      <div class="partner-tier-row reveal">
+        <div class="ptier gold">
+          <span class="ptier-medal">🏆</span>
+          <div>
+            <p class="ptier-brand">Aruba</p>
+            <p class="ptier-level">Gold Partner</p>
+          </div>
+        </div>
+        <div class="ptier diamond">
+          <span class="ptier-medal">💎</span>
+          <div>
+            <p class="ptier-brand">Extreme Networks</p>
+            <p class="ptier-level">Diamond Partner</p>
+          </div>
+        </div>
+        <div class="ptier preferred">
+          <span class="ptier-medal">⭐</span>
+          <div>
+            <p class="ptier-brand">Ruckus Networks</p>
+            <p class="ptier-level">Preferred Partner</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="tech-label reveal">Technology Partners</p>
+      <div class="tech-grid reveal">
+        <span>HPE</span><span>Fortinet</span><span>Juniper Networks</span>
+        <span>Dell Technologies</span><span>F5</span><span>Allied Telesis</span>
+        <span>Polycom</span><span>Molex</span><span>Lenovo</span>
+        <span>CommScope</span><span>TP-Link</span><span>Honeywell</span>
+        <span>SonicWall</span><span>Alphion</span><span>Netrack</span>
+        <span>SyroTech</span><span>AirPro Networks</span><span>Ruckus</span>
+        <span>Ubiquiti</span><span>MikroTik</span><span>VMware</span>
+        <span>Linux</span><span>Microsoft Windows Server</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROGRAMS ========== -->
+  <section id="programs" class="section bg-white">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="eyebrow">Education & Training</span>
+        <h2 class="sec-title">Programs & Lab Setup</h2>
+        <p class="sec-desc">Empowering the next generation of networking professionals with hands-on industry exposure.</p>
+      </div>
+      <div class="programs-grid">
+        <div class="prog-card dark reveal">
+          <div class="prog-num">01</div>
+          <h3>Technical Internship Program</h3>
+          <p>A structured internship for engineering students offering hands-on experience in networking technologies, firewall configuration, switching, structured cabling, and IT infrastructure management. Guided by experienced professionals with real-world project exposure.</p>
+          <div class="prog-footer">
+            <span class="prog-tag">🏅 Industry Certificate Provided</span>
+          </div>
+        </div>
+        <div class="prog-card blue reveal">
+          <div class="prog-num">02</div>
+          <h3>Network Lab Setup</h3>
+          <p>Complete hands-on setup and configuration of networking laboratories for educational institutions, training centers, and corporate environments — including firewalls, managed switches, routers, wireless access points, and network security solutions.</p>
+          <div class="prog-footer">
+            <span class="prog-tag">🏫 For Institutions & Corporates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section bg-offwhite">
+    <div class="container">
+      <div class="sec-header reveal">
+        <span class="eyebrow">Get In Touch</span>
+        <h2 class="sec-title">Let's Work Together</h2>
+        <p class="sec-desc">Reach out for a free consultation and let our engineers design the right solution for your business.</p>
+      </div>
+      <div class="contact-wrap">
+
+        <div class="contact-left reveal">
+          <div class="cinfo-card">
+            <div class="cinfo-row">
+              <div class="cinfo-ico">📍</div>
+              <div>
+                <h4>Office Address</h4>
+                <p>M/s. NETWORKS, 1st Floor, Plot No. 201,<br>18th Street, Chowdry Nagar,<br>Valasaravakkam, Chennai – 600087.</p>
+              </div>
+            </div>
+            <div class="cinfo-row">
+              <div class="cinfo-ico">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p><a href="tel:+919500038509">+91 95000 38509</a></p>
+              </div>
+            </div>
+            <div class="cinfo-row">
+              <div class="cinfo-ico">📠</div>
+              <div>
+                <h4>Telefax</h4>
+                <p>+91-44-42801402 / 42861499</p>
+              </div>
+            </div>
+            <div class="cinfo-row">
+              <div class="cinfo-ico">✉️</div>
+              <div>
+                <h4>Email</h4>
+                <p><a href="mailto:sales@networks-in.com">sales@networks-in.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send Us a Message</h3>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>Full Name</label>
+              <input type="text" placeholder="e.g. Rajesh Kumar" required>
+            </div>
+            <div class="form-group">
+              <label>Company Name</label>
+              <input type="text" placeholder="Your Company">
+            </div>
+          </div>
+          <div class="form-row-2">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="you@company.com" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="tel" placeholder="+91 9XXXXXXXXX">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Service Required</label>
+            <select>
+              <option value="">Select a service...</option>
+              <option>Network Infrastructure & Wireless</option>
+              <option>Security & Access Control</option>
+              <option>Enterprise Networking</option>
+              <option>Data Center & Server Solutions</option>
+              <option>Audio Visual & Collaboration</option>
+              <option>Project & Managed Services</option>
+              <option>Technical Internship Program</option>
+              <option>Network Lab Setup</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Describe your requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Send Message
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="Networks_Logo.jpeg" alt="NETWORKS">
+          <p>Enterprise networking and IT infrastructure solutions trusted by businesses across India for over 17 years.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Services</h5>
+          <a href="#services">Network Infrastructure</a>
+          <a href="#services">Security & Surveillance</a>
+          <a href="#services">Enterprise Networking</a>
+          <a href="#services">Data Center Solutions</a>
+          <a href="#services">Managed Services</a>
+        </div>
+        <div class="footer-links">
+          <h5>Company</h5>
+          <a href="#about">About Us</a>
+          <a href="#partners">Partners</a>
+          <a href="#programs">Internship Program</a>
+          <a href="#programs">Lab Setup</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <p>📍 Valasaravakkam, Chennai – 600087</p>
+          <p>📞 <a href="tel:+919500038509">+91 95000 38509</a></p>
+          <p>✉️ <a href="mailto:sales@networks-in.com">sales@networks-in.com</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 NETWORKS. All rights reserved.</p>
+        <p>ISO Certified &nbsp;·&nbsp; Registered MSME &nbsp;·&nbsp; ISODA Member</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP ========== -->
+  <div id="wa-widget">
+    <div id="wa-card">
+      <div class="wa-head">
+        <div class="wa-avatar">📡</div>
+        <div class="wa-info">
+          <strong>NETWORKS Support</strong>
+          <small>🟢 Typically replies instantly</small>
+        </div>
+        <button id="wa-close">✕</button>
+      </div>
+      <div class="wa-body">
+        <div class="wa-msg">
+          👋 Hi! Welcome to <strong>NETWORKS</strong>.<br><br>
+          How can we help? Ask us about our networking solutions, lab setup, internship programs, or request a free consultation!
+        </div>
+        <a class="wa-btn-chat"
+           href="https://wa.me/919500038509?text=Hello%20NETWORKS%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+           target="_blank">
+          💬 Start Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+    <div id="wa-fab" title="Chat on WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.555 4.11 1.523 5.836L0 24l6.322-1.497A11.933 11.933 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 01-4.989-1.361l-.358-.213-3.712.879.936-3.61-.234-.371A9.818 9.818 0 012.182 12C2.182 6.58 6.58 2.182 12 2.182c5.42 0 9.818 4.398 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
+      </svg>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
