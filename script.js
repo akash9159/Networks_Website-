@@ -78,21 +78,66 @@ setTimeout(() => { if (!waOpen) toggleWA(); }, 6000);
 
 
 // ── 5. CONTACT FORM ────────────────────────
-const contactForm = document.getElementById('contactForm');
+document.addEventListener("DOMContentLoaded", () => {
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = contactForm.querySelector('.btn-submit');
-  btn.innerHTML = '✅ Message Sent!';
-  btn.style.background = '#16A34A';
-  btn.disabled = true;
+    const contactForm = document.getElementById("contactForm");
 
-  setTimeout(() => {
-    btn.innerHTML = 'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
-    btn.style.background = '';
-    btn.disabled = false;
-    contactForm.reset();
-  }, 3000);
+    contactForm.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const btn = contactForm.querySelector(".btn-submit");
+
+        btn.disabled = true;
+        btn.innerHTML = "Sending...";
+
+        const formData = {
+
+            name: document.getElementById("name").value,
+            company: document.getElementById("company").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            service: document.getElementById("service").value,
+            message: document.getElementById("message").value
+
+        };
+
+        try {
+
+            const response = await fetch("http://127.0.0.1:5000/api/contact", {
+
+                method: "POST",
+
+                headers: {
+                    "Content-Type": "application/json"
+                },
+
+                body: JSON.stringify(formData)
+
+            });
+
+            const result = await response.json();
+
+            btn.innerHTML = "✅ Message Sent!";
+            btn.style.background = "#16A34A";
+
+            alert(result.message);
+
+            contactForm.reset();
+
+        } catch (error) {
+
+            console.error(error);
+
+            btn.innerHTML = "Send Message";
+            btn.disabled = false;
+
+            alert("Unable to connect to Flask.");
+
+        }
+
+    });
+
 });
 
 
