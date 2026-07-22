@@ -1,7 +1,7 @@
-from flask import request, jsonify
+from flask import request, jsonify 
 from app import app
-from database import save_contact
-from email_service import send_admin_email
+from database import save_contact 
+from email_service import send_admin_email, send_customer_ack_email
 
 @app.route("/")
 def home():
@@ -20,6 +20,7 @@ def contact():
     save_contact(data)
     try:
      send_admin_email(data)
+     send_customer_ack_email(data)
      print("✅ Email sent successfully.")
     except Exception as e:
      print(f"❌ Email Error: {e}")

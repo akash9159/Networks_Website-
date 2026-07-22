@@ -32,3 +32,36 @@ Message:
     server.login(Config.SMTP_EMAIL, Config.SMTP_PASSWORD)
     server.send_message(msg)
     server.quit()
+def send_customer_ack_email(data):
+    print("Sending acknowledgement to:", data["email"])
+
+    msg = MIMEMultipart()
+
+    msg["From"] = Config.SMTP_EMAIL
+    msg["To"] = data["email"]
+    msg["Subject"] = "Thank You for Contacting NETWORKS"
+
+    body = f"""
+Dear {data['name']},
+
+Thank you for contacting NETWORKS.
+
+We have received your enquiry regarding:
+
+Service: {data['service']}
+
+Our technical team will contact you within 24 hours.
+
+Regards,
+
+NETWORKS
+Enterprise Networking Solutions
+"""
+
+    msg.attach(MIMEText(body, "plain"))
+
+    server = smtplib.SMTP(Config.SMTP_SERVER, Config.SMTP_PORT)
+    server.starttls()
+    server.login(Config.SMTP_EMAIL, Config.SMTP_PASSWORD)
+    server.send_message(msg)
+    server.quit()

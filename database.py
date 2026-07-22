@@ -35,3 +35,21 @@ def save_contact(data):
 
     cursor.close()
     conn.close()
+def get_all_contacts():
+
+    conn = get_connection()
+
+    cursor = conn.cursor(dictionary=True)
+
+    cursor.execute("""
+        SELECT *
+        FROM contacts
+        ORDER BY created_at DESC
+    """)
+
+    contacts = cursor.fetchall()
+
+    cursor.close()
+    conn.close()
+
+    return contacts
