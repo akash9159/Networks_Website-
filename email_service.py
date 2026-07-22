@@ -56,6 +56,10 @@ Regards,
 
 NETWORKS
 Enterprise Networking Solutions
+
+Email: sales@networks-in.com
+Website: https://www.networks-in.com
+
 """
 
     msg.attach(MIMEText(body, "plain"))
