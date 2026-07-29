@@ -22,6 +22,10 @@ def javascript():
 def images(filename):
     return send_from_directory("images", filename)
 
+@app.route("/Logos/<path:filename>")
+def logos(filename):
+    return send_from_directory("Logos", filename)
+
 
 @app.route("/api/contact", methods=["POST"])
 def contact():
