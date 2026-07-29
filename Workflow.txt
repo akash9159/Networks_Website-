@@ -1,20 +1,20 @@
-NW website/
+NW website
 │
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── Networks Logo.jpeg
+├── app.py
+├── routes.py
+├── database.py
+├── email_service.py
+├── config.py
+├── .env
 │
-├── backend/
-│   ├── app.py
-│   ├── config.py
-│   ├── database.py
-│   ├── routes.py
-│   ├── email_service.py
-│   ├── requirements.txt
-│   ├── .env
-│   └── .gitignore
+├── index.html
+├── admin.html
+├── style.css
+├── script.js
 │
-└── database/
-    └── schema.sql
+└── images
+    ├── Networks Logo.jpeg
+    ├── Networks_Logo.jpeg
+    ├── cisco.png
+    ├── extreme.png
+    └── ...
