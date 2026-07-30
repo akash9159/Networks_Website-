@@ -56,7 +56,7 @@ Regards,
 
 NETWORKS
 Enterprise Networking Solutions
-Email: sales@networks-in.com
+Email: info@networks-in.com
 Website: https://www.networks-in.com
 
 """
