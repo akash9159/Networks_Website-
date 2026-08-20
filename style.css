@@ -66,9 +66,9 @@ img { max-width: 100%; display: block; }
 }
 
 .nav-logo img {
-  height: 65px;
+  height: 60px;
   width: auto;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
 .nav-links {
@@ -1233,7 +1233,7 @@ img { max-width: 100%; display: block; }
   background: #fff;
   border: 1px solid #E0F2FE;
   border-radius: 14px;
-  padding: 22px 16px;
+  padding: 14px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1242,7 +1242,7 @@ img { max-width: 100%; display: block; }
   text-align: center;
   box-shadow: 0 4px 16px rgba(14,165,233,0.06);
   transition: box-shadow 0.25s, transform 0.25s;
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .logo-card:hover {
@@ -1323,3 +1323,70 @@ img { max-width: 100%; display: block; }
 #li-fab:hover {
   transform: scale(1.03);
 }
+
+/* SLOGAN SECTION */
+.slogan-section {
+  padding: 50px 0;
+  background: #F0F9FF;
+  border-top: 1px solid #E0F2FE;
+  border-bottom: 1px solid #E0F2FE;
+}
+
+.slogan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.slogan-card {
+  background: #ffffff;
+  border: 1px solid #E0F2FE;
+  border-radius: 16px;
+  padding: 28px 24px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(14,165,233,0.07);
+  transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
+}
+
+.slogan-card:hover {
+  box-shadow: 0 8px 28px rgba(14,165,233,0.14);
+  transform: translateY(-4px);
+  border-color: #0EA5E9;
+}
+
+.slogan-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #0EA5E9, #34D399);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 16px;
+}
+
+.slogan-card h3 {
+  color: #0F172A;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.slogan-card p {
+  color: #64748B;
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  .slogan-grid { grid-template-columns: 1fr; }
+}
+
+.logo-card img[alt="SonicWall"] { width: 160px; height: 70px; }
+.logo-card img[alt="CommScope"] { width: 160px; height: 70px; }
+.logo-card img[alt="Juniper Networks"] { width: 160px; height: 70px; }
+.logo-card img[alt="SyroTech"] { width: 160px; height: 70px; }
+.logo-card img[alt="Logitech"] { width: 180px; height: 90px; object-fit: contain; }
+.logo-card img[alt="CheckPoint"] { width: 180px; height: 90px; object-fit: contain; }
+.logo-card img[alt="genetech"] { width: 180px; height: 90px }
